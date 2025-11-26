@@ -9,6 +9,55 @@
 <body>
     <div class="container">
         <h1>古文活用練習</h1>
+        
+        <button id="toggle-table-button">活用表を表示/非表示</button>
+
+        <div id="katsuyou-table-container">
+            <h3>古文活用表（主な動詞・形容詞）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>活用形</th>
+                        <th>未然</th>
+                        <th>連用</th>
+                        <th>終止</th>
+                        <th>連体</th>
+                        <th>已然</th>
+                        <th>命令</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**四段活用**</td>
+                        <td>**ア段**</td>
+                        <td>**イ段**</td>
+                        <td>**ウ段**</td>
+                        <td>**ウ段**</td>
+                        <td>**エ段**</td>
+                        <td>**エ段**</td>
+                    </tr>
+                    <tr>
+                        <td>**上二段**</td>
+                        <td>**イ段**</td>
+                        <td>**イ段**</td>
+                        <td>**ウ段**</td>
+                        <td>**ウ段 + る**</td>
+                        <td>**ウ段 + れ**</td>
+                        <td>**イ段 + よ**</td>
+                    </tr>
+                    <tr>
+                        <td>**下二段**</td>
+                        <td>**エ段**</td>
+                        <td>**エ段**</td>
+                        <td>**ウ段**</td>
+                        <td>**ウ段 + る**</td>
+                        <td>**ウ段 + れ**</td>
+                        <td>**エ段 + よ**</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+
         <div id="quiz-area">
             <div class="question-box">
                 <span id="question-text">（ここに問題）</span>
@@ -18,35 +67,43 @@
                 <div class="input-group">
                     <label for="gokan">語幹:</label>
                     <input type="text" id="gokan" data-answer-key="gokan">
+                    <p class="correct-answer" data-key="gokan"></p>
                 </div>
                 <div class="input-group">
                     <label for="katsuyou">活用の種類:</label>
                     <input type="text" id="katsuyou" data-answer-key="katsuyou">
+                    <p class="correct-answer" data-key="katsuyou"></p>
                 </div>
 
                 <div class="input-group">
                     <label for="mizen">未然形:</label>
                     <input type="text" id="mizen" data-answer-key="mizen">
+                    <p class="correct-answer" data-key="mizen"></p>
                 </div>
                 <div class="input-group">
                     <label for="renyou">連用形:</label>
                     <input type="text" id="renyou" data-answer-key="renyou">
+                    <p class="correct-answer" data-key="renyou"></p>
                 </div>
                 <div class="input-group">
                     <label for="shuushi">終止形:</label>
                     <input type="text" id="shuushi" data-answer-key="shuushi">
+                    <p class="correct-answer" data-key="shuushi"></p>
                 </div>
                 <div class="input-group">
                     <label for="rentai">連体形:</label>
                     <input type="text" id="rentai" data-answer-key="rentai">
+                    <p class="correct-answer" data-key="rentai"></p>
                 </div>
                 <div class="input-group">
                     <label for="izen">已然形:</label>
                     <input type="text" id="izen" data-answer-key="izen">
+                    <p class="correct-answer" data-key="izen"></p>
                 </div>
                 <div class="input-group">
                     <label for="meirei">命令形:</label>
                     <input type="text" id="meirei" data-answer-key="meirei">
+                    <p class="correct-answer" data-key="meirei"></p>
                 </div>
             </div>
 
