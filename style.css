@@ -67,13 +67,13 @@ h1 {
 #katsuyou-table-container table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 13px; /* テーブルが大きくなったためフォントを微調整 */
 }
 
 #katsuyou-table-container th, 
 #katsuyou-table-container td {
     border: 1px solid #ccc;
-    padding: 8px;
+    padding: 6px 4px; /* パディングを微調整 */
     text-align: center;
     white-space: nowrap;
 }
@@ -81,6 +81,15 @@ h1 {
 #katsuyou-table-container thead th {
     background-color: #ecf0f1;
     color: #333;
+}
+
+/* カテゴリ分けのヘッダー行 */
+#katsuyou-table-container .category-header {
+    background-color: #3498db; /* 青色 */
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
 }
 
 #katsuyou-table-container tbody td:first-child {
