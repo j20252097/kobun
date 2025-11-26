@@ -1,0 +1,165 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+    padding: 24px 32px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.question-box {
+    text-align: center;
+    margin-bottom: 24px;
+    min-height: 60px; /* 問題の高さ（がたつき防止） */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box; /* paddingを含めて幅を計算 */
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.2);
+}
+
+/* 採点後のスタイル */
+.input-group input.correct {
+    border-color: #2ecc71;
+    background-color: #e8f9f1;
+}
+
+.input-group input.incorrect {
+    border-color: #e74c3c;
+    background-color: #fdedec;
+}
+
+.controls {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+#check-button {
+    background-color: #3498db;
+    color: white;
+}
+
+#check-button:hover {
+    background-color: #2980b9;
+}
+
+#next-button {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#next-button:hover {
+    background-color: #7f8c8d;
+}
+
+/* ボタンが無効な時のスタイル */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+
+#result-area {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    height: 30px; /* 高さを確保 */
+}
+
+#result-area.correct {
+    color: #2ecc71;
+}
+
+#result-area.incorrect {
+    color: #e74c3c;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .answer-grid {
+        grid-template-columns: 1fr; /* 狭い画面では1カラムに */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #question-text {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
