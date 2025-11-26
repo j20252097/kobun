@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古文活用練習（言文バージョン）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>古文活用練習</h1>
+        <div id="quiz-area">
+            <div class="question-box">
+                <span id="question-text">（ここに問題）</span>
+            </div>
+
+            <div class="answer-grid">
+                <div class="input-group">
+                    <label for="gokan">語幹:</label>
+                    <input type="text" id="gokan" data-answer-key="gokan">
+                </div>
+                <div class="input-group">
+                    <label for="katsuyou">活用の種類:</label>
+                    <input type="text" id="katsuyou" data-answer-key="katsuyou">
+                </div>
+
+                <div class="input-group">
+                    <label for="mizen">未然形:</label>
+                    <input type="text" id="mizen" data-answer-key="mizen">
+                </div>
+                <div class="input-group">
+                    <label for="renyou">連用形:</label>
+                    <input type="text" id="renyou" data-answer-key="renyou">
+                </div>
+                <div class="input-group">
+                    <label for="shuushi">終止形:</label>
+                    <input type="text" id="shuushi" data-answer-key="shuushi">
+                </div>
+                <div class="input-group">
+                    <label for="rentai">連体形:</label>
+                    <input type="text" id="rentai" data-answer-key="rentai">
+                </div>
+                <div class="input-group">
+                    <label for="izen">已然形:</label>
+                    <input type="text" id="izen" data-answer-key="izen">
+                </div>
+                <div class="input-group">
+                    <label for="meirei">命令形:</label>
+                    <input type="text" id="meirei" data-answer-key="meirei">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="check-button">採点</button>
+                <button id="next-button">次の問題</button>
+            </div>
+            
+            <div id="result-area"></div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
