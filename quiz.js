@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkButton = document.getElementById('check-button');
     const nextButton = document.getElementById('next-button');
     const resultArea = document.getElementById('result-area');
-    const toggleTableButton = document.getElementById('toggle-table-button'); // 追加
-    const katsuyouTable = document.getElementById('katsuyou-table-container'); // 追加
+    const toggleTableButton = document.getElementById('toggle-table-button');
+    const katsuyouTable = document.getElementById('katsuyou-table-container');
     
     const inputFields = document.querySelectorAll('.answer-grid input');
-    const correctAnswerDisplays = document.querySelectorAll('.correct-answer'); // 追加
+    const correctAnswerDisplays = document.querySelectorAll('.correct-answer');
 
     // 活用表の表示/非表示を切り替える
     toggleTableButton.addEventListener('click', () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // 1. JSONデータの読み込み (前と同じ)
+    // 1. JSONデータの読み込み
     async function loadQuizData() {
         try {
             const response = await fetch('kogo.json'); 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. クイズのセットアップ（問題のシャッフル） (前と同じ)
+    // 2. クイズのセットアップ（問題のシャッフル）
     function setupQuiz() {
         shuffledIndices = quizData.map((_, i) => i);
         for (let i = shuffledIndices.length - 1; i > 0; i--) {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayQuestion();
     }
 
-    // 3. 問題の表示 (正解表示エリアのリセットを追加)
+    // 3. 問題の表示
     function displayQuestion() {
         if (currentIndex >= shuffledIndices.length) {
             questionText.textContent = '全問終了！ 🎉';
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // UIリセット
         clearAllInputs();
-        resetCorrectAnswerDisplays(); // 正解表示をリセット
+        resetCorrectAnswerDisplays();
         resultArea.textContent = '';
         resultArea.className = '';
         checkButton.disabled = false; 
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.textContent = '次の問題';
     }
 
-    // 4. 入力欄のクリアとスタイルのリセット (前と同じ)
+    // 4. 入力欄のクリアとスタイルのリセット
     function clearAllInputs() {
         inputFields.forEach(input => {
             input.value = '';
@@ -90,14 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4.5 正解表示エリアのリセット (新規追加)
+    // 4.5 正解表示エリアのリセット
     function resetCorrectAnswerDisplays() {
         correctAnswerDisplays.forEach(p => {
             p.textContent = '';
         });
     }
 
-    // 5. 採点処理 (不正解時の正解表示機能を追加)
+    // 5. 採点処理
     function checkAnswer() {
         let allCorrect = true;
         resetCorrectAnswerDisplays(); // 採点前にリセット
@@ -106,10 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = input.dataset.answerKey; 
             const correctAnswer = currentQuiz.answers[key]; 
             const userAnswer = input.value.trim(); 
-            const answerDisplay = document.querySelector(`.correct-answer[data-key="${key}"]`); // 正解表示要素を取得
+            const answerDisplay = document.querySelector(`.correct-answer[data-key="${key}"]`); 
 
             if (!correctAnswer) return; 
 
+            // 正解判定ロジック
             const correctOptions = correctAnswer.split('・').map(opt => opt.trim());
             const isMatch = correctOptions.some(option => option === userAnswer);
 
@@ -119,13 +120,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 input.className = 'incorrect'; 
                 allCorrect = false;
                 
-                // ***【機能追加】不正解の場合、下に正しい答えを表示する***
+                // ***【修正点】ユーザー入力の有無にかかわらず、不正解なら正解を表示***
                 answerDisplay.textContent = `正: ${correctAnswer}`;
             }
             input.disabled = true; 
         });
 
-        // 全体の結果表示 (前と同じ)
+        // 全体の結果表示
         if (allCorrect) {
             resultArea.textContent = '正解！ 💮';
             resultArea.className = 'correct';
@@ -138,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.disabled = false; 
     }
 
-    // 6. 次の問題へ (前と同じ)
+    // 6. 次の問題へ
     function nextQuestion() {
         if (nextButton.textContent === 'リスタート') {
             setupQuiz(); 
@@ -148,13 +149,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // イベントリスナーの設定 (前と同じ + Enterキー操作の改善)
+    // イベントリスナーの設定
     checkButton.addEventListener('click', checkAnswer);
     nextButton.addEventListener('click', nextQuestion);
     
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
-            e.preventDefault();
+            e.preventDefault(); 
             if (!checkButton.disabled) {
                 checkAnswer();
             } else if (!nextButton.disabled) {
