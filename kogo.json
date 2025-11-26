@@ -1,0 +1,324 @@
+[
+  {
+    "question": "いふ",
+    "type": "doushi",
+    "answers": {
+      "gokan": "い",
+      "katsuyou": "ハ行四段活用",
+      "mizen": "は",
+      "renyou": "ひ",
+      "shuushi": "ふ",
+      "rentai": "ふ",
+      "izen": "へ",
+      "meirei": "へ"
+    }
+  },
+  {
+    "question": "過ぐ",
+    "type": "doushi",
+    "answers": {
+      "gokan": "す",
+      "katsuyou": "ガ行上二段活用",
+      "mizen": "ぎ",
+      "renyou": "ぎ",
+      "shuushi": "ぐ",
+      "rentai": "ぐる",
+      "izen": "ぐれ",
+      "meirei": "ぎよ"
+    }
+  },
+  {
+    "question": "尋ね入る",
+    "type": "doushi",
+    "answers": {
+      "gokan": "たずねい",
+      "katsuyou": "ラ行四段活用",
+      "mizen": "ら",
+      "renyou": "り",
+      "shuushi": "る",
+      "rentai": "る",
+      "izen": "れ",
+      "meirei": "れ"
+    }
+  },
+  {
+    "question": "はべり",
+    "type": "doushi",
+    "answers": {
+      "gokan": "はべ",
+      "katsuyou": "ラ行変格活用",
+      "mizen": "ら",
+      "renyou": "り",
+      "shuushi": "り",
+      "rentai": "る",
+      "izen": "れ",
+      "meirei": "れ"
+    }
+  },
+  {
+    "question": "遥かなり",
+    "type": "keiyoudoushi_nari",
+    "answers": {
+      "gokan": "はるか",
+      "katsuyou": "ナリ活用",
+      "mizen": "なら",
+      "renyou": "なり・に",
+      "shuushi": "なり",
+      "rentai": "なる",
+      "izen": "なれ",
+      "meirei": "なれ"
+    }
+  },
+  {
+    "question": "ふみわく",
+    "type": "doushi",
+    "answers": {
+      "gokan": "ふみわ",
+      "katsuyou": "カ行下二段活用",
+      "mizen": "け",
+      "renyou": "け",
+      "shuushi": "く",
+      "rentai": "くる",
+      "izen": "くれ",
+      "meirei": "けよ"
+    }
+  },
+  {
+    "question": "心ぼそし",
+    "type": "keiyoushi_ku",
+    "answers": {
+      "gokan": "こころぼそ",
+      "katsuyou": "ク活用",
+      "mizen": "く・から",
+      "renyou": "く・かり",
+      "shuushi": "し",
+      "rentai": "き・かる",
+      "izen": "けれ",
+      "meirei": "かれ"
+    }
+  },
+  {
+    "question": "住みなす",
+    "type": "doushi",
+    "answers": {
+      "gokan": "すみな",
+      "katsuyou": "サ行四段活用",
+      "mizen": "さ",
+      "renyou": "し",
+      "shuushi": "す",
+      "rentai": "す",
+      "izen": "せ",
+      "meirei": "せ"
+    }
+  },
+  {
+    "question": "あり",
+    "type": "doushi",
+    "answers": {
+      "gokan": "あ",
+      "katsuyou": "ラ行変格活用",
+      "mizen": "ら",
+      "renyou": "り",
+      "shuushi": "り",
+      "rentai": "る",
+      "izen": "れ",
+      "meirei": "れ"
+    }
+  },
+  {
+    "question": "埋もる",
+    "type": "doushi",
+    "answers": {
+      "gokan": "うづもる",
+      "katsuyou": "ラ行下二段活用",
+      "mizen": "れ",
+      "renyou": "れ",
+      "shuushi": "る",
+      "rentai": "るる",
+      "izen": "るれ",
+      "meirei": "れよ"
+    }
+  },
+  {
+    "question": "おとなふ",
+    "type": "doushi",
+    "answers": {
+      "gokan": "おとな",
+      "katsuyou": "ハ行四段活用",
+      "mizen": "は",
+      "renyou": "ひ",
+      "shuushi": "ふ",
+      "rentai": "ふ",
+      "izen": "へ",
+      "meirei": "へ"
+    }
+  },
+  {
+    "question": "なし",
+    "type": "keiyoushi_ku",
+    "answers": {
+      "gokan": "な",
+      "katsuyou": "ク活用",
+      "mizen": "く・から",
+      "renyou": "く・かり",
+      "shuushi": "し",
+      "rentai": "き・かる",
+      "izen": "けれ",
+      "meirei": "かれ"
+    }
+  },
+  {
+    "question": "折り散らす",
+    "type": "doushi",
+    "answers": {
+      "gokan": "おりちら",
+      "katsuyou": "サ行四段活用",
+      "mizen": "さ",
+      "renyou": "し",
+      "shuushi": "す",
+      "rentai": "す",
+      "izen": "せ",
+      "meirei": "せ"
+    }
+  },
+  {
+    "question": "住む",
+    "type": "doushi",
+    "answers": {
+      "gokan": "す",
+      "katsuyou": "マ行四段活用",
+      "mizen": "ま",
+      "renyou": "み",
+      "shuushi": "む",
+      "rentai": "む",
+      "izen": "め",
+      "meirei": "め"
+    }
+  },
+  {
+    "question": "あはれなり",
+    "type": "keiyoudoushi_nari",
+    "answers": {
+      "gokan": "あはれ",
+      "katsuyou": "ナリ活用",
+      "mizen": "なら",
+      "renyou": "なり・に",
+      "shuushi": "なり",
+      "rentai": "なる",
+      "izen": "なれ",
+      "meirei": "なれ"
+    }
+  },
+  {
+    "question": "見る",
+    "type": "doushi",
+    "answers": {
+      "gokan": "み",
+      "katsuyou": "マ行上一段活用",
+      "mizen": "み",
+      "renyou": "み",
+      "shuushi": "る",
+      "rentai": "る",
+      "izen": "れ",
+      "meirei": "みよ"
+    }
+  },
+  {
+    "question": "大きなり",
+    "type": "keiyoudoushi_nari",
+    "answers": {
+      "gokan": "おおき",
+      "katsuyou": "ナリ活用",
+      "mizen": "なら",
+      "renyou": "なり・に",
+      "shuushi": "なり",
+      "rentai": "なる",
+      "izen": "なれ",
+      "meirei": "なれ"
+    }
+  },
+  {
+    "question": "たわわなり",
+    "type": "keiyoudoushi_nari",
+    "answers": {
+      "gokan": "たわわ",
+      "katsuyou": "ナリ活用",
+      "mizen": "なら",
+      "renyou": "なり・に",
+      "shuushi": "なり",
+      "rentai": "なる",
+      "izen": "なれ",
+      "meirei": "なれ"
+    }
+  },
+  {
+    "question": "なる",
+    "type": "doushi",
+    "answers": {
+      "gokan": "な",
+      "katsuyou": "ラ行四段活用",
+      "mizen": "ら",
+      "renyou": "り",
+      "shuushi": "る",
+      "rentai": "る",
+      "izen": "れ",
+      "meirei": "れ"
+    }
+  },
+  {
+    "question": "きびし",
+    "type": "keiyoushi_shiku",
+    "answers": {
+      "gokan": "きび",
+      "katsuyou": "シク活用",
+      "mizen": "しく・しから",
+      "renyou": "しく・しかり",
+      "shuushi": "し",
+      "rentai": "しき・しかる",
+      "izen": "しけれ",
+      "meirei": "しかれ"
+    }
+  },
+  {
+    "question": "囲ふ",
+    "type": "doushi",
+    "answers": {
+      "gokan": "かこ",
+      "katsuyou": "ハ行四段活用",
+      "mizen": "は",
+      "renyou": "ひ",
+      "shuushi": "ふ",
+      "rentai": "ふ",
+      "izen": "へ",
+      "meirei": "へ"
+    }
+  },
+  {
+    "question": "ことさむ",
+    "type": "doushi",
+    "answers": {
+      "gokan": "ことさ",
+      "katsuyou": "マ行下二段活用",
+      "mizen": "め",
+      "renyou": "め",
+      "shuushi": "む",
+      "rentai": "むる",
+      "izen": "むれ",
+      "meirei": "めよ"
+    }
+  },
+  {
+    "question": "覚ゆ",
+    "type": "doushi",
+    "answers": {
+      "gokan": "おぼ",
+      "katsuyou": "ヤ行下二段活用",
+      "mizen": "え",
+      "renyou": "え",
+      "shuushi": "ゆ",
+      "rentai": "ゆる",
+      "izen": "ゆれ",
+      "meirei": "えよ"
+    }
+  }
+]
